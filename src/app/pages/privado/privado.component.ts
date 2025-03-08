@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class PrivadoComponent {
 
+  logout(){
+    localStorage.setItem('login', 'false')
+  }
+
 }

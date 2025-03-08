@@ -17,7 +17,13 @@ export class FormLoginComponent {
 
   login(formulario: any){
     //console.log(formulario.value);
-    this.servicio.postLogin(formulario.value).subscribe()
+    this.servicio.postLogin(formulario.value).subscribe(acceso =>{
+      console.log(acceso);
+      let token = acceso.accessToken
+      if(token != ""){
+        localStorage.setItem("login", "true")
+      }
+    })
   }
 
 }
