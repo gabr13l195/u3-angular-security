@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-form-login',
@@ -12,10 +13,11 @@ export class FormLoginComponent {
   email: any;
   password: any;
 
-  login(formulario: any){
-    console.log(formulario.value);
-    
+  servicio = inject (LoginService)
 
+  login(formulario: any){
+    //console.log(formulario.value);
+    this.servicio.postLogin(formulario.value).subscribe()
   }
 
 }

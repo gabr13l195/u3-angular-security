@@ -2,7 +2,7 @@ import { CanActivateFn } from '@angular/router';
 
 export const loginGuard: CanActivateFn = (route, state) => {
 
-  let acceso= "true"
+  let acceso= "false"
 
   if (acceso == "false"){
     return false

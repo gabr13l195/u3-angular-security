@@ -1,0 +1,43 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Wilmer Gabriel",
+      "edad": 29,
+      "profesion": "dev",
+      "id": 1
+    },
+    {
+      "nombre": "Romina Michelle",
+      "edad": 30,
+      "profesion": "psicologa",
+      "id": 2
+    },
+    {
+      "email": "gabriel@gmail.com",
+      "password": "12334",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "wilmer@gmail.com",
+      "password": "$2a$10$LmzhNqApvZfXGbFn51s63.v7UPcZTdOIWxGdXuLdL10K2Y5/1s7rG",
+      "id": 1
+    },
+    {
+      "email": "romina@gmail.com",
+      "password": "$2a$10$n12EpK0t64Fym6EdEFZt1eanl/yK5A9nz7aAv7nRk6NZ7n.bfxIwW",
+      "id": 2
+    },
+    {
+      "email": "gabriel@gmail.com",
+      "password": "$2a$10$siDj/IV9wQzSl8IVrL8Ky.5TUVX7TQzStQbM2IkB1479SreX8oHgO",
+      "id": 3
+    },
+    {
+      "email": "wilmer1@gmail.com",
+      "password": "$2a$10$n2GBDXdOuh1Mrg4dkgy3HOjw6yh9NyxmF6GEKeBImxN2aSlrnGPXK",
+      "id": 4
+    }
+  ]
+}
