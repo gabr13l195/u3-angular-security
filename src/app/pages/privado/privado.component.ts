@@ -10,6 +10,7 @@ export class PrivadoComponent {
 
   logout(){
     localStorage.setItem('login', 'false')
+    window.location.href="login"
   }
 
 }

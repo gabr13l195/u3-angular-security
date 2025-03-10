@@ -1,0 +1,13 @@
+<div class="container">
+    <form (ngSubmit)="rol(form)" #form="ngForm">
+
+        <label for="">Ingresar Correo</label>
+        <input type="email" class="form-control" name="email" [(ngModel)]="email">
+
+        <label for="">Ingrese Contraseña</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="password">
+
+        <button class="btn btn-primary mt-3" type="submit">Acceder</button>
+
+    </form>
+</div>

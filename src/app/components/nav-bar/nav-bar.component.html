@@ -4,13 +4,19 @@
             <li class="nav-item">
                 <a class="nav-link active" routerLink="/home">Home</a>
             </li>
+            @if (verificar=='true') {
             <li class="nav-item">
                 <a class="nav-link" routerLink="privado">Privado</a>
             </li>
+        }
+            @if (verificar=='false') {
             <li class="nav-item">
                 <a class="nav-link" routerLink="login">Login</a>
             </li>
-
+        }
+        <li class="nav-item">
+            <a class="nav-link" routerLink="productos">Productos</a>
+        </li>
         </ul>
     </div>
 </nav>

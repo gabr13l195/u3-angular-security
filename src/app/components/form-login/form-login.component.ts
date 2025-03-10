@@ -22,6 +22,7 @@ export class FormLoginComponent {
       let token = acceso.accessToken
       if(token != ""){
         localStorage.setItem("login", "true")
+        window.location.href="privado"
       }
     })
   }
