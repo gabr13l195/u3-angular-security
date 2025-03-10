@@ -4,11 +4,11 @@
     <!-- Overlay oscuro pero sin bloquear el navbar -->
     <div class="absolute inset-0 bg-gray-800/70 pointer-events-none"></div>
 
-    <!-- Contenedor del formulario (z-index alto y clickeable) -->
+    <!-- Contenedor del formulario -->
     <div class="relative bg-gray-900 p-8 rounded-lg shadow-lg text-white w-96 z-10 pointer-events-auto">
-        <h2 class="text-3xl font-bold text-center mb-6">Iniciar Sesión</h2>
+        <h2 class="text-3xl font-bold text-center mb-6">¡Regístrate!</h2>
 
-        <form (ngSubmit)="login(form)" #form="ngForm">
+        <form (ngSubmit)="register(form)" #form="ngForm">
             <div class="mb-4">
                 <label class="block mb-2">Ingresar Correo</label>
                 <input type="email" class="form-control input input-bordered w-full" name="email" [(ngModel)]="email"
@@ -21,14 +21,14 @@
                     [(ngModel)]="password" required>
             </div>
 
-            <button class="btn btn-primary w-full">Acceder</button>
+            <button class="btn btn-primary w-full" type="submit">Registrarse</button>
         </form>
 
-        <!-- Mensaje de redirección al registro -->
+        <!-- Mensaje de redirección al login -->
         <p class="text-center text-sm mt-4">
-            ¿No tienes una cuenta?
-            <a routerLink="registro">
-                <a routerLink="/registro" class="text-blue-400 hover:underline">Regístrate aquí</a>
+            ¿Ya tienes una cuenta?
+            <a routerLink="login">
+                <a routerLink="/login" class="text-blue-400 hover:underline">Inicia sesión aquí</a>
             </a>
         </p>
     </div>

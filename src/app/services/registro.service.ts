@@ -9,10 +9,10 @@ export class RegistroService {
 
   constructor(private http: HttpClient) { }
 
-  private API_LOGIN = "http://localhost:3000/usuarios"
+  private API_REGISTER= "http://localhost:3000/users"
 
   postRegister(usuario: any):Observable<any>{
-    return this.http.post(this.API_LOGIN, usuario)
+    return this.http.post(this.API_REGISTER, usuario)
   }
 
 }

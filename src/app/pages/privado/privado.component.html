@@ -1,6 +1,55 @@
-<div>
-    <h1>PRIVADO</h1>
-    <img src="https://picsum.photos/id/800/900/500" alt="">
-    <br>
-    <button class="btn btn-danger" (click)="logout()">Cerrar</button>
+<div class="min-h-screen flex flex-col items-center justify-center bg-gray-800 text-white p-8">
+    <div class="container mx-auto">
+        <!-- Sección superior con imagen y título -->
+        <div class="flex items-center space-x-8 mb-10">
+            <!-- Imagen de perfil -->
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Perfil"
+                class="w-40 h-40 rounded-full shadow-lg">
+
+            <div>
+                <h1 class="text-4xl font-bold">Bienvenido a tu perfil</h1>
+                <p class="text-lg text-gray-300 mt-2">Aquí puedes ver tus datos registrados.</p>
+            </div>
+        </div>
+
+        <!-- Tabla con información -->
+        <div class="overflow-x-auto rounded-lg border border-gray-700 bg-gray-900 shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Información Personal</h2>
+            <table class="table w-full text-white">
+                <thead>
+                    <tr class="bg-gray-700 text-white">
+                        <th class="p-3">#</th>
+                        <th class="p-3">Nombre</th>
+                        <th class="p-3">Trabajo</th>
+                        <th class="p-3">Color Favorito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even:bg-gray-800 dark:even:bg-gray-700">
+                        <th class="p-3">1</th>
+                        <td class="p-3">Bryan Alvarado</td>
+                        <td class="p-3">Quality Control Specialist</td>
+                        <td class="p-3">Azul</td>
+                    </tr>
+                    <tr class="even:bg-gray-800 dark:even:bg-gray-700">
+                        <th class="p-3">2</th>
+                        <td class="p-3">Gabriel Zambrano</td>
+                        <td class="p-3">Desktop Support Technician</td>
+                        <td class="p-3">Morado</td>
+                    </tr>
+                    <tr class="even:bg-gray-800 dark:even:bg-gray-700">
+                        <th class="p-3">3</th>
+                        <td class="p-3">Brice Swyre</td>
+                        <td class="p-3">Tax Accountant</td>
+                        <td class="p-3">Red</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Botón de cerrar sesión -->
+        <div class="mt-8 text-center">
+            <button class="btn btn-danger px-6 py-3" (click)="logout()">Cerrar Sesión</button>
+        </div>
+    </div>
 </div>

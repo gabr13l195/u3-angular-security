@@ -7,11 +7,13 @@ import { privadoGuard, productosGuard } from './guards/privado.guard';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ComponentFixture } from '@angular/core/testing';
 import { Productos2Component } from './pages/productos2/productos2.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 
 export const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'productos', component:ProductosComponent, canMatch:[productosGuard]},
     {path: 'privado', component:PrivadoComponent, canActivate:[loginGuard]},
     {path: 'login', component:LoginComponent, canActivate:[privadoGuard]},
+    {path: 'registro', component:RegistroComponent},
     {path: 'productos', component:Productos2Component},
 ];

@@ -1,17 +1,18 @@
 <nav class="navbar bg-gray-800">
     <div class="container mx-auto flex justify-between">
         <div class="flex space-x-4">
+            @if (verificar == 'false') {
             <a class="btn btn-ghost text-white text-lg" routerLink="/home">Home</a>
-
+            }
             @if (verificar == 'true') {
-            <a class="btn btn-ghost text-white text-lg" routerLink="privado">Privado</a>
+            <a class="btn btn-ghost text-white text-lg" routerLink="privado">Perfil</a>
             }
 
             @if (verificar == 'false') {
             <a class="btn btn-ghost text-white text-lg" routerLink="login">Login</a>
             }
 
-            <a class="btn btn-ghost text-white text-lg" routerLink="productos">Productos</a>
+            <!-- <a class="btn btn-ghost text-white text-lg" routerLink="productos">Productos</a> -->
         </div>
     </div>
 </nav>
