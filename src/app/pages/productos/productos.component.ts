@@ -21,10 +21,12 @@ export class ProductosComponent {
     this.servicios.postLogin(formulario.value).subscribe(acceso => {
       console.log(acceso);
       this.token = acceso.accesToken
+      if (this.token != "") {
+        sessionStorage.setItem('producto', 'true')
+        window.location.href='productos'
+      }
     })
-    if (this.token != "") {
-      sessionStorage.setItem('producto', 'true')
-    }
+
 
   }
 

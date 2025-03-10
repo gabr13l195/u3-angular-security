@@ -11,6 +11,14 @@ export const privadoGuard: CanActivateFn = (route, state) => {
 };
 
 
+
 export const productosGuard: CanMatchFn = (route, state) => {
-  return true
+
+  let acceso = true
+
+  if(sessionStorage.getItem('producto')=='true  '){
+    acceso = false
+  }
+
+  return acceso
 };
